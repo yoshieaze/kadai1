@@ -99,8 +99,7 @@ $("#resetbtn").click(function () {
 });
 
 // new modalVideo();
-$(document).ready(function(){
-    $('.popup-youtube').magnificPopup({
+ $('.popup-youtube').magnificPopup({
         disableOn:700,
         type:'iframe',
         iframe:{
@@ -116,7 +115,7 @@ $(document).ready(function(){
 
         fixedContentPos:false
 });
-});
+
 
 
 //// 3.まとめ関数　/////
