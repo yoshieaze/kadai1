@@ -222,12 +222,24 @@ img {
 }
 
 /* BGM Area */
-.music{
-    width: 60%;
-    margin: 30px auto;
+.entertainment{
+    display: flex;
+    height: 120px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.music{
+    width: 40%;
+    margin: 30px;
+    height: 60px;
+}
 
+.lucky2logo{
+    height: auto;
+    width: 100px;
+    display: inline-block;
+}
 
 /* footer */
 footer{

@@ -98,6 +98,26 @@ $("#resetbtn").click(function () {
     doReset();
 });
 
+// new modalVideo();
+$(document).ready(function(){
+    $('.popup-youtube').magnificPopup({
+        disableOn:700,
+        type:'iframe',
+        iframe:{
+            patterns:{
+                index:'youtube.com',
+                id:'',
+                src:'https:'
+            },
+        },
+        mainClass:'mfp-fade',
+        removalDelay:200,
+        // preloader:false,
+
+        fixedContentPos:false
+});
+});
+
 
 //// 3.まとめ関数　/////
 
@@ -333,6 +353,10 @@ function resetScore(){
             "color": "black"
         });
 }
+
+
+
+
 
 //// 5.デバッグ関数 ////
 function debug() {
