@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./janken.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<header>
+    <div class="wrapper title-wrapper">
+        <div class="title">
+            <img src="https://kirapawa.jp/wp/wp-content/themes/kirapawa/assets/img/logo.png" alt="キラパワ">
+            <h1>じゃんけんげーむ</h1>
+        </div>
+        <div class="rule">
+            <!-- ルール記載 -->
+            <h1>【るーる】</h1>
+            <ul>
+                <li>じゃんけんでクラスけをたおそう！</li>
+                <li>サニーがかったら、クラスケをこうげきできるよ！</li>
+                <li>ぐー:2pt ちょき:3pt ぱー:4pt </li>
+                <li>さきにたおしたほうがかち!</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- main -->
+<main>
+    <!-- Game Area -->
+    <section id="gamearea">
+    <!-- 自分の出し手 -->
+    <div class="wrapper">
+        <div class="gamearea-wrapper">
+            <div class="Profile">
+                <h2>キラパワサニー</h2>
+                <img src="img/kirari3.png" alt="キラパワサニー">
+               <!-- HP Guage -->
+               <div class="guage-wrapper">
+                    <div class="hpGuage">
+                        <div class="hpGuageValue" id="currentMyValue"> </div>
+                    </div>
+                    <div class="score" id="myScore">15</div>
+                </div>
+            </div>
+            <!-- 自分の出し手 -->
+            <div class="hand" id="myHand">
+               <img id="myHandImg"src="img/1.png" alt="グー">
+            </div>
+    <!-- </div> -->
+    <!-- vs -->
+        <div class="display_versus">
+            <p>VS</p>
+            <div id="message">
+                <p></p>
+            </div>
+        </div>
+    <!-- com area -->
+        <div class="hand" id="comHand">
+            <img id="comHandImg" src="img/1.png" alt="グー">
+        </div>
+        <div class="Profile">
+            <h2>クラスケ</h2>
+            <img src="img/mackra_1.png" alt="クラスケ">
+            <!-- HP Guage -->
+            <div class="guage-wrapper">
+                <div class="hpGuage">
+                    <div class="hpGuageValue" id="currentComValue"></div>
+                </div>
+                <div class="score" id="comScore">15</div>
+            </div>    
+        </div>
+ 
+    </div>
+</div>
+</section>
+
+<!-- Result area -->
+<div class="result" id="result">
+    スタートをおしてね!
+</div>
+
+    <!-- Control Area -->
+<section id="control">  
+    <!-- コントロールボタン -->
+    <div class="controlbtn">
+        <button id="strtbtn" class="ctrlbtn">スタート</button>
+        <button id="resetbtn" class="ctrlbtn">もう１かい</button>
+    </div>
+    <!-- じゃんけんボタン -->
+    <div class="jankenbtn-wrapper">
+        <button class="jankenbtn" id="guu">ぐー
+            <p>かち/まけ:2pt</p>
+        </button>
+        <button class="jankenbtn" id="choki">ちょき
+            <p>かち/まけ:3pt</p>
+        </button>
+        <button class="jankenbtn" id="pa">ぱー
+            <p>かち/まけ:4pt</p> 
+        </button>
+     </div>
+
+</section>  
+
+<!-- BGM Area -->
+<section>
+    <div class="music">
+        <iframe src="https://open.spotify.com/embed/playlist/0PEJoGw1fV5BcLihAVD1os" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+</section>
+
+
+</main>
+<footer>
+    <div class="wrapper">
+    yoshienagatomo all rights reserved.
+    </div>
+</footer>
+
+<script>
+    //グーボタンクリック
+
+
+
+</script>
+</body>
+</html>

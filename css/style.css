@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* 全体 */
+
+html{
+    font-size: 62.5%; 
+    /* 16 px * 62.5% = 10px */
+    /* margin: 0 auto; */
+}
+
+body{
+    background-color: white;
+    font-size: 2.0rem;
+    font-family: "Nico Moji",'Lato', 'Noto Sans JP', Arial, Helvetica, sans-serif;
+}
+    
+img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    margin: auto;
+    text-align: center;
+}
+
+/* header */
+.title-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.title{
+    flex: 40%;
+    font-size: 3.0rem;
+    padding: 10px 20px;
+}
+
+.title img{
+    width: 65%;
+}
+
+.rule{
+    border: solid 1px black;
+    border-radius: 20px;
+    flex: 55%;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto 20px auto;
+    font-size: 2.4rem;
+
+}
+
+.rule ul{
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+/* main */
+
+/*          
+   Game Area 
+             */
+
+.gamearea-wrapper{
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    grid-template-columns: repeat(5, minmax(350px,1fr));
+}
+
+.Profile h2{
+    font-size: 5.0rem;
+    margin-bottom: 10px;
+}
+
+.Profile img{
+    width: 40%;
+    height: auto;
+    border: double 1.5px #479FF6;
+    border-radius: 77px;
+    margin-bottom: 10px;
+}
+
+.scoretable{
+    flex: 45%;
+    margin-left: 40px;
+    align-self: center;
+    
+}
+
+.score{
+    font-size: 5.0rem;
+}
+
+
+/* Gauge */
+.hpGuage{
+    border: 1px solid #777;
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+}
+.hpGuageValue{
+   height: 20px;
+   background-color: #6bf; 
+   transition: 1s;
+}
+
+/* vs */
+.display_versus{
+    font-size: 5.0rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#message{
+    color:#ff006f;
+    font-size: 5.0rem;
+    animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+
+
+
+/*          
+    Control Area 
+                     */
+
+.result{
+    width: 800px;
+    text-align: center;
+    border: solid 1px #bfbfbf;
+    border-radius: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    background-color: black;
+    color: chartreuse;
+    font-size: 2.4rem;
+}
+
+
+/*          
+    Control Area 
+                     */
+
+.controlbtn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding-bottom: 30px;
+}
+
+.ctrlbtn{
+    flex: 40%;
+    padding: 15px;
+    border: solid 1px;
+    text-align: center;
+    max-width: 400px;
+    background-color:#bfbfbf;
+    border-radius: 20px;
+    font-size: 3.0rem;
+}
+
+/* じゃんけんボタン */
+.jankenbtn-wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.jankenbtn{
+    flex: 30%;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 150px;
+    background-color: pink;
+    min-width: 130px;
+    font-size: 5.0rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.jankenbtn p{
+    font-size: 2.4rem;
+    padding-left: 30px;
+}
+
+
+
+
+.jankenbtn img{
+    width: 30%;
+    height: auto;
+}
+
+#guu{
+    background-image: url(..//img/1.png);
+    background-repeat: no-repeat;
+}
+
+#choki{
+    background-image: url(..//img/2.png);
+    background-repeat: no-repeat;
+
+}
+
+#pa{
+    background-image: url(..//img/3.png);
+    background-repeat: no-repeat;
+}
+
+/* BGM Area */
+.music{
+    width: 60%;
+    margin: 30px auto;
+}
+
+
+
+/* footer */
+footer{
+    background-color: #bfbfbf;
+    padding: 10px;
+    margin-top: 200px;
+}
