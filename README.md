@@ -15,15 +15,17 @@ JavaScript1 じゃんけんアプリ
 
 ②工夫した点・こだわった点<br>
 　　
-a. 効果音を利用しました。<br> 
+a. 効果音の実装。<br> 
 　　
 https://mixkit.co/ <br>
 　　
-b.自分の5歳の子供が楽しめるゲームであること（複雑すぎない、ガールズ戦士のアイコンを使う） <br>
-　　
+b.JQueryプラグインを利用したYouTubeのポップアップ再生
+https://dimsemenov.com/plugins/magnific-popup/
+
 c.じゃんけんの画像が自動的に切り替わるように用意しました <br>
 
-d. HPゲージの設置 <br>
+d.HPゲージの設置 <br>
+https://www.youtube.com/watch?v=hkKtQ6u8Yug
 
 ③質問・疑問（あれば） なし <br>
  
