@@ -98,7 +98,7 @@ $("#resetbtn").click(function () {
     doReset();
 });
 
-// new modalVideo();
+// Lucky2のYouTube動画
 $('.popup-youtube').magnificPopup({
         disableOn:700,
         type:'iframe',
@@ -111,11 +111,15 @@ $('.popup-youtube').magnificPopup({
         // },
         mainClass:'mfp-fade',
         removalDelay:200,
-        // preloader:false,
+        autoplay:1,
 
         fixedContentPos:false
-
 });
+
+// 必殺技の動画
+function showFinalshotMovie(){
+    $(".finalshot").click();
+}
 
 
 //// 3.まとめ関数　/////
@@ -288,7 +292,7 @@ function gameOverJudge(){
     if (myScore > 0 && comScore <= 0){
         isGameOver = true;
         //動画を流す
-        winMovieOpen();
+        $(".finalshot").click();
         //ゲージを0%にする   
         $("#currentComValue").css({
             "background-color" : "white"       
@@ -356,14 +360,6 @@ function resetScore(){
         });
 }
 
-
-function winMovieOpen(){
-    setTimeout(function(){
-    window.open("https://youtu.be/C7fmT7zhOYI?t=1172", '_self',).close();
-}, 10000)
-}
-
-winMovieOpen();
 
 
 //// 5.デバッグ関数 ////
