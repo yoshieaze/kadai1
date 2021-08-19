@@ -20,8 +20,8 @@ let isGameOver = false;
 
 //じゃんけん画像の配列
 const jankenImg = [null,"img/1.png", "img/2.png", "img/3.png"];
-//じゃんけんの勝利数
-let victory = 0;
+//じゃんけんの勝利
+let victory = false;
 
 //// 2.イベントハンドラの割り当て////
 
@@ -102,24 +102,18 @@ $("#resetbtn").click(function () {
 $('.popup-youtube').magnificPopup({
         disableOn:700,
         type:'iframe',
-        // iframe:{
-        //     patterns:{
-        //         index:'youtube.com',
-        //         id:'',
-        //         src:'https:'
-            // },
-        // },
         mainClass:'mfp-fade',
         removalDelay:200,
         autoplay:1,
-
         fixedContentPos:false
 });
 
 // 必殺技の動画
 function showFinalshotMovie(){
+    if(victory === true){
     $(".finalshot").click();
 }
+};
 
 
 //// 3.まとめ関数　/////
@@ -137,6 +131,8 @@ function doJankenProcess(){
     updateGuage();
     //ゲーム終了判定
     gameOverJudge();
+    //勝利してたら動画流す
+    showFinalshotMovie();
     // //デバッグ関数
     // debug();
 }
@@ -291,8 +287,8 @@ function gameOverJudge(){
     //プレイヤーの勝利
     if (myScore > 0 && comScore <= 0){
         isGameOver = true;
+        victory = true;
         //動画を流す
-        $(".finalshot").click();
         //ゲージを0%にする   
         $("#currentComValue").css({
             "background-color" : "white"       
@@ -311,6 +307,7 @@ function gameOverJudge(){
     //COMの勝利
     if (comScore > 0 && myScore <= 0){
         isGameOver = true;
+        victory = false;
          //ゲージを0%にする       
          $("#currentMyValue").css({
             "background-color" : "white"       
