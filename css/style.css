@@ -81,7 +81,7 @@ img {
 
 
 .Profile h2{
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     margin-bottom: 10px;
 }
 
@@ -146,7 +146,7 @@ img {
     border-radius: 20px;
     line-height: 1.5;
     padding: 10px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 30px auto;
     background-color: black;
     color: chartreuse;
     font-size: 2.4rem;
@@ -158,7 +158,7 @@ img {
                      */
 
 .controlbtn{
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     column-gap: 40px;
@@ -191,7 +191,7 @@ img {
     height: 150px;
     background-color:#ec6faa;
     min-width: 130px;
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     text-align: center;
     display: inline-block;
     margin: 0 40px;
@@ -199,31 +199,34 @@ img {
 
 .jankenbtn p{
     font-size: 2.4rem;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 
-
-
 .jankenbtn img{
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
 #guu{
     background-image: url(..//img/1.png);
     background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 10% 50%;
 }
 
 #choki{
     background-image: url(..//img/2.png);
     background-repeat: no-repeat;
-
+    background-size: 130px;
+    background-position: 10% 50%;
 }
 
 #pa{
     background-image: url(..//img/3.png);
     background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 10% 50%;
 }
 
 /* BGM Area */
