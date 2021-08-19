@@ -287,6 +287,8 @@ function gameOverJudge(){
     //プレイヤーの勝利
     if (myScore > 0 && comScore <= 0){
         isGameOver = true;
+        //動画を流す
+        winMovieOpen();
         //ゲージを0%にする   
         $("#currentComValue").css({
             "background-color" : "white"       
@@ -294,12 +296,13 @@ function gameOverJudge(){
         //メッセージの表示
         $("#result").text("かったね!おめでとう！「もう１かい」をおすと、またあそべるよ！");
         $("#message").text("You Win!");
+        $("#message").css({
+            "color": "#ff006f"
+        });           
         //音楽再生
         const music = new Audio('media/mixkit-game-bonus-reached-2065.wav');
-        music.play();
-        //LocalStrageに勝利数をセット
-        victory ++;
-        console.log(victory);
+        music.play();     
+
     } 
     //COMの勝利
     if (comScore > 0 && myScore <= 0){
@@ -354,7 +357,13 @@ function resetScore(){
 }
 
 
+function winMovieOpen(){
+    setTimeout(function(){
+    window.open("https://youtu.be/C7fmT7zhOYI?t=1172", '_self',).close();
+}, 10000)
+}
 
+winMovieOpen();
 
 
 //// 5.デバッグ関数 ////
