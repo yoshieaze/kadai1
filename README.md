@@ -20,12 +20,12 @@ a. 効果音の実装。<br>
 https://mixkit.co/ <br>
 　　
 b.JQueryプラグインを利用したYouTubeのポップアップ再生
-https://dimsemenov.com/plugins/magnific-popup/
+https://dimsemenov.com/plugins/magnific-popup/<br>
 
 c.じゃんけんの画像が自動的に切り替わるように用意しました <br>
 
 d.HPゲージの設置 <br>
-https://www.youtube.com/watch?v=hkKtQ6u8Yug
+https://www.youtube.com/watch?v=hkKtQ6u8Yug<br>
 
 ③質問・疑問（あれば） なし <br>
  
